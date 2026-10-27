@@ -1,7 +1,7 @@
 {
  "id": "kick",
  "name": "Kick",
- "rank": 38,
+ "rank": 8,
  "version": 1,
  "weight": 0.5,
  "match": "kick\\.com/[A-Za-z0-9_-]+(?:/clips/clip_[A-Za-z0-9]+)?/?$",

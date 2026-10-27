@@ -1,6 +1,6 @@
 {
  "id": "mediathek",
  "name": "ARD & ZDF Mediathek",
- "rank": 27,
+ "rank": 29,
  "engine": "mediathek"
 }

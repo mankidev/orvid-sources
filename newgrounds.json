@@ -1,7 +1,7 @@
 {
  "id": "newgrounds",
  "name": "Newgrounds",
- "rank": 34,
+ "rank": 36,
  "version": 1,
  "weight": 0.5,
  "match": "newgrounds\\.com/portal/view/(\\d+)",

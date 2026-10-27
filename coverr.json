@@ -1,7 +1,7 @@
 {
  "id": "coverr",
  "name": "Coverr",
- "rank": 37,
+ "rank": 39,
  "version": 1,
  "weight": 0.4,
  "match": "cdn\\.coverr\\.co/videos/[^/]+/[^/]+\\.mp4",

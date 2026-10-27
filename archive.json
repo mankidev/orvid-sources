@@ -1,6 +1,6 @@
 {
  "id": "archive",
  "name": "Internet Archive",
- "rank": 10,
+ "rank": 12,
  "engine": "archive"
 }
