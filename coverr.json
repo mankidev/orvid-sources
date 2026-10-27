@@ -1,0 +1,10 @@
+{
+ "id": "coverr",
+ "name": "Coverr",
+ "rank": 37,
+ "version": 1,
+ "weight": 0.4,
+ "match": "cdn\\.coverr\\.co/videos/[^/]+/[^/]+\\.mp4",
+ "icon": "coverr.png",
+ "script": "coverr.js"
+}

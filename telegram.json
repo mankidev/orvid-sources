@@ -1,0 +1,10 @@
+{
+ "id": "telegram",
+ "name": "Telegram",
+ "rank": 39,
+ "version": 1,
+ "weight": 0.5,
+ "match": "t\\.me/(?:s/)?[A-Za-z0-9_]{5,32}/\\d+",
+ "icon": "telegram.png",
+ "script": "telegram.js"
+}
