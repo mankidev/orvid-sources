@@ -1,7 +1,7 @@
 {
  "id": "vbox7",
  "name": "Vbox7",
- "rank": 38,
+ "rank": 40,
  "version": 1,
  "weight": 0.4,
  "match": "vbox7\\.com/play:([a-z0-9]+)",

@@ -1,6 +1,6 @@
 {
  "id": "peertube",
  "name": "PeerTube",
- "rank": 32,
+ "rank": 34,
  "engine": "peertube"
 }

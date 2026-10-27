@@ -1,0 +1,10 @@
+{
+ "id": "kwai",
+ "name": "Kwai",
+ "rank": 9,
+ "version": 1,
+ "weight": 0.5,
+ "match": "kwai\\.com/@[^/]+/video/\\d+",
+ "icon": "kwai.png",
+ "script": "kwai.js"
+}

@@ -1,0 +1,10 @@
+{
+ "id": "dzen",
+ "name": "Dzen",
+ "rank": 16,
+ "version": 1,
+ "weight": 0.5,
+ "match": "dzen\\.ru/embed/[A-Za-z0-9_-]+",
+ "icon": "dzen.png",
+ "script": "dzen.js"
+}
