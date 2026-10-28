@@ -2,6 +2,9 @@
  "files": {
   "aparat.json": "9c8cc54d96965fe9943267772a859a36e291bc92d81a1c8999833a5ce2a04ad4",
   "archive.json": "cda46ce0c5e41941a05403e5acf454a7244b221161f376ea77e97f7e0e6302cb",
+  "arte.js": "d6ac9ff61c25411beffea62ab9bd1128ae4c2801b093965d31b6c931d977dfe7",
+  "arte.json": "ea55eb8d8e160622b3b822939d194a106424ea86a69a4e7aba1fe513a0c7b9c1",
+  "arte.png": "8ca62b85e125147cc619c134a23c71b00c6fc3895f79f36d578650ebbb15025c",
   "bitchute.json": "d89d43ce1b7f574bbd0a6442ae84eb938b10847fc9dd0b3627e3c714a2aa0ae9",
   "bluesky.js": "d759b447f94e877f2bd9be44e590ca67f99bce918554dbdfc9574d908f1b8a40",
   "bluesky.json": "bcb06706643f1a585932ee1f03c58d453984b329ef66fa3a5100444e0995624b",
@@ -90,6 +93,7 @@
  "sources": [
   "aparat.json",
   "archive.json",
+  "arte.json",
   "bitchute.json",
   "bluesky.json",
   "ccc.json",

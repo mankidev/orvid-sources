@@ -1,0 +1,10 @@
+{
+ "id": "arte",
+ "name": "ARTE",
+ "rank": 43,
+ "version": 1,
+ "weight": 0.6,
+ "match": "arte\\.tv/(?:en|de|fr|es|pl|it)/videos/(\\d{6}-\\d{3}-[A-Z])",
+ "icon": "arte.png",
+ "script": "arte.js"
+}
