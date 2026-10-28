@@ -1,0 +1,11 @@
+{
+ "id": "bilibili",
+ "name": "Bilibili",
+ "rank": 44,
+ "version": 1,
+ "weight": 0.6,
+ "hedge": 4,
+ "match": "bilibili\\.com/video/(BV[0-9A-Za-z]{10})",
+ "icon": "bilibili.png",
+ "script": "bilibili.js"
+}
