@@ -1,0 +1,11 @@
+{
+ "id": "pluto",
+ "name": "Pluto TV",
+ "rank": 42,
+ "version": 1,
+ "weight": 0.5,
+ "hedge": 4,
+ "match": "pluto\\.tv/(?:[a-z]{2}/)?on-demand/(?:movies|series/[0-9a-f]{24}/episode)/([0-9a-f]{24})",
+ "icon": "pluto.png",
+ "script": "pluto.js"
+}
