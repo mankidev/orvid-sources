@@ -6,5 +6,6 @@
  "weight": 0.5,
  "match": "kick\\.com/[A-Za-z0-9_-]+(?:/clips/clip_[A-Za-z0-9]+)?/?$",
  "icon": "kick.png",
- "script": "kick.js"
+ "script": "kick.js",
+ "torPlayback": false
 }

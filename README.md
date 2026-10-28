@@ -26,7 +26,7 @@ Each source is one JSON file with an `id`, a `name` and one of three bodies:
 
 For sites that answer slowly over Tor, `html.timeout` (5 to 60 seconds, default 15) sets how long Orvid waits, `html.maxHeight` caps the video quality, and `hedge` (1 to 6) sends each request over that many Tor circuits at once. Orvid keeps the circuit that answered first and plays the video through it.
 
-A source with `"portal": true` needs no `match` and keeps every link it finds. Links from sites Orvid knows play through that source, other pages through Orvid's generic player. `"torless": true` turns a source off while Tor is on. The DuckDuckGo and Yandex sources use both, because search engines block Tor. While Tor is off, they see your IP address and your search.
+A source with `"portal": true` needs no `match` and keeps every link it finds. Links from sites Orvid knows play through that source, other pages through Orvid's generic player. `"torless": true` turns a source off while Tor is on. The DuckDuckGo and Yandex sources use both, because search engines block Tor. While Tor is off, they see your IP address and your search. `"torPlayback": false` keeps a source searchable over Tor but shows a note that its videos do not play there.
 
 `search` returns `{items: [{url, title, author, duration, views, thumb, date}], next}`. It can return `skip: true` with no items when the query does not suit the source, such as a Telegram search that is not a channel name. `resolve` returns `{url, hls, referer, title, author, subtitles}`, where `subtitles` is a list of `{url, lang, label}` WebVTT or SRT files.
 

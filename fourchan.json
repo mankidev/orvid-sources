@@ -1,0 +1,10 @@
+{
+ "id": "fourchan",
+ "name": "4chan",
+ "rank": 46,
+ "version": 1,
+ "weight": 0.4,
+ "match": "i\\.4cdn\\.org/wsg/(\\d+)\\.(?:webm|mp4)",
+ "icon": "fourchan.png",
+ "script": "fourchan.js"
+}

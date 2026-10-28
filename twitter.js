@@ -2,7 +2,7 @@ var RESERVED = /^(?:search|hashtag|i|home|explore|intent|share|settings|login|si
 var ENGINES = [
   "https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/html/?q=",
   "https://html.duckduckgo.com/html/?q="
-];
+].filter(function (u) { return env.tor || u.indexOf(".onion/") < 0; });
 var PROFILES = 3;
 
 function links(phrase) {

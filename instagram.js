@@ -7,7 +7,7 @@ var ENGINES = [
   "https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/html/?q=",
   "https://html.duckduckgo.com/html/?q=",
   "https://lite.duckduckgo.com/lite/?q="
-];
+].filter(function (u) { return env.tor || u.indexOf(".onion/") < 0; });
 
 var failing = {};
 
