@@ -1,0 +1,10 @@
+{
+ "id": "niconico",
+ "name": "Niconico",
+ "rank": 39,
+ "version": 1,
+ "weight": 0.5,
+ "match": "nicovideo\\.jp/watch/((?:sm|so|nm)\\d+)",
+ "icon": "niconico.png",
+ "script": "niconico.js"
+}
