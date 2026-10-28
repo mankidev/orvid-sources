@@ -1,0 +1,10 @@
+{
+ "id": "huya",
+ "name": "Huya",
+ "rank": 45,
+ "version": 1,
+ "weight": 0.5,
+ "match": "huya\\.com/video/play/(\\d+)\\.html",
+ "icon": "huya.png",
+ "script": "huya.js"
+}
