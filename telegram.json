@@ -2,7 +2,7 @@
  "id": "telegram",
  "name": "Telegram",
  "rank": 4,
- "version": 1,
+ "version": 2,
  "weight": 0.5,
  "match": "t\\.me/(?:s/)?[A-Za-z0-9_]{5,32}/\\d+",
  "icon": "telegram.png",

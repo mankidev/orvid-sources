@@ -38,6 +38,7 @@ function posts(ch, before) {
 
 function search(query, next) {
   var list = next ? JSON.parse(next) : channels(query).map(function (c) { return [c, null]; });
+  if (!list.length) return { items: [], next: null, skip: true };
   var items = [], rest = [];
   list.forEach(function (e) {
     try {
