@@ -1,0 +1,9 @@
+{
+ "id": "hdfilmcehennemi",
+ "name": "HDFilmCehennemi",
+ "version": 5,
+ "weight": 0.6,
+ "match": "hdfilmcehennemi\\.nl/[a-z0-9-]+/$",
+ "icon": "hdfilmcehennemi.png",
+ "script": "hdfilmcehennemi.js"
+}

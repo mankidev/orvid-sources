@@ -22,7 +22,7 @@ def main():
         files[f] = hashlib.sha256(body).hexdigest()
         if f.endswith(".json"):
             d = json.loads(body)
-            for field in (("id", "name") if "engine" in d else ("id", "name", "match")):
+            for field in (("id", "name") if "engine" in d or d.get("portal") else ("id", "name", "match")):
                 if field not in d:
                     sys.exit(f"{f}: missing {field}")
             if "match" in d:

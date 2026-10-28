@@ -1,0 +1,10 @@
+{
+ "id": "moviebox",
+ "name": "MovieBox",
+ "version": 1,
+ "weight": 0.7,
+ "match": "movieboxhd\\.net/movies/[A-Za-z0-9-]+\\?id=\\d+",
+ "icon": "moviebox.png",
+ "script": "moviebox.js",
+ "hedge": 4
+}

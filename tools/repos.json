@@ -3,10 +3,5 @@
   "name": "Orvid secret",
   "url": "https://raw.githubusercontent.com/mankidev/orvid-sources-secret/main/",
   "adult": true
- },
- {
-  "name": "Orvid films",
-  "url": "https://raw.githubusercontent.com/mankidev/orvid-films/main/",
-  "adult": false
  }
 ]

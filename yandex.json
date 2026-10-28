@@ -1,0 +1,11 @@
+{
+ "id": "yandex",
+ "name": "Yandex",
+ "rank": 0,
+ "version": 1,
+ "weight": 0.6,
+ "portal": true,
+ "torless": true,
+ "icon": "yandex.png",
+ "script": "yandex.js"
+}
