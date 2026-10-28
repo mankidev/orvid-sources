@@ -1,0 +1,10 @@
+{
+ "id": "reddit",
+ "name": "Reddit",
+ "rank": 23,
+ "version": 1,
+ "weight": 0.5,
+ "match": "v\\.redd\\.it/([A-Za-z0-9]+)",
+ "icon": "reddit.png",
+ "script": "reddit.js"
+}
