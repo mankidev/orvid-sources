@@ -1,0 +1,11 @@
+{
+ "id": "kinoleha",
+ "name": "KinoLeha",
+ "rank": 48,
+ "version": 1,
+ "weight": 0.4,
+ "lang": "cyrillic",
+ "match": "kinoleha\\.net/(?:film|ab)/([^/?#]+)",
+ "icon": "kinoleha.png",
+ "script": "kinoleha.js"
+}

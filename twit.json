@@ -1,0 +1,10 @@
+{
+ "id": "twit",
+ "name": "TWiT",
+ "rank": 47,
+ "version": 1,
+ "weight": 0.4,
+ "match": "twit\\.tv/shows/[^/]+/episodes/([^/?#]+)",
+ "icon": "twit.png",
+ "script": "twit.js"
+}
