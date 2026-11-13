@@ -1,0 +1,11 @@
+{
+ "id": "mailru",
+ "name": "Mail.ru Video",
+ "rank": 50,
+ "version": 1,
+ "weight": 0.5,
+ "torless": true,
+ "match": "my\\.mail\\.ru/(?:mail|bk|list|inbox|ya|v|community)/[^/\\s\"]+/video/[^\\s\"?#]+\\.html",
+ "icon": "mailru.png",
+ "script": "mailru.js"
+}
