@@ -110,6 +110,9 @@
   "vbox7.json": "5e38c47556392dfc9d0010ba50f639e3a9131e1c3fb63b3258aa1b3f0d44671c",
   "vbox7.png": "00673841ebfafc770835bf1aecc05a8f54fb47e0108b2e390a8152fe6a22b5a7",
   "vk.json": "621d5c1fe2805812084b50524c63d0ac1c623e4f8022af97d3a25406d87b553e",
+  "worldstar.js": "7cb1c3d58dc716421b89424c5938cd66166efafcca352df0f0b1eacd25d29fc9",
+  "worldstar.json": "35254716066e807b05adc6cd058aff2672b8b34be55a45a7a501333723ebaaa2",
+  "worldstar.png": "6645e712705ed1b69671884418b607583e5441d23808bee44bbe8c2972955b07",
   "yandex.js": "0d7289b9151c24393a2faa16c1aa64b66b19b18ee29403c15468cee8940e6fe7",
   "yandex.json": "eb3f55951c22d7e6b82f54429022f88059a94239b775262611203d40f921d3b2",
   "yandex.png": "61c76c23cec0bc9bc7fa099d8f83ecc6ebefb80cfd83e6487aeb0228a7537c6f",
@@ -177,6 +180,7 @@
   "twitter.json",
   "vbox7.json",
   "vk.json",
+  "worldstar.json",
   "yandex.json",
   "youtube.json"
  ]

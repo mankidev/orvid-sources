@@ -1,0 +1,10 @@
+{
+ "id": "worldstar",
+ "name": "WorldStar",
+ "rank": 51,
+ "version": 1,
+ "weight": 0.5,
+ "match": "(?:worldstarhiphop|worldstar)\\.com/videos/(wshh[A-Za-z0-9]+)",
+ "icon": "worldstar.png",
+ "script": "worldstar.js"
+}
