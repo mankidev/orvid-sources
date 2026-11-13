@@ -1,0 +1,10 @@
+{
+ "id": "brighteon",
+ "name": "Brighteon",
+ "rank": 49,
+ "version": 1,
+ "weight": 0.5,
+ "match": "brighteon\\.com/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})",
+ "icon": "brighteon.png",
+ "script": "brighteon.js"
+}
