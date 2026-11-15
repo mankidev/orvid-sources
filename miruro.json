@@ -1,0 +1,10 @@
+{
+ "id": "miruro",
+ "name": "Miruro",
+ "version": 1,
+ "weight": 0.6,
+ "match": "miruro\\.to/watch/[A-Za-z0-9_-]+/[^/?#]+",
+ "icon": "miruro.png",
+ "script": "miruro.js",
+ "hedge": 2
+}
