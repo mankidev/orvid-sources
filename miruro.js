@@ -58,6 +58,12 @@ function name(t) {
   return t.english || t.romaji || t.native || "";
 }
 
+function original(t, shown) {
+  var romaji = t && t.romaji ? String(t.romaji) : "";
+  if (!romaji || romaji.toLowerCase() == String(shown).toLowerCase()) return "";
+  return romaji;
+}
+
 function slug(s) {
   return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "anime";
 }
@@ -90,7 +96,7 @@ function search(query, next) {
     items.push({
       url: SITE + "/watch/" + a.id + "/" + slug(a.title && a.title.romaji || title) + "?ep=" + ep,
       title: series ? title + " - Episode " + ep : title,
-      author: a.season_year ? (a.format || "Anime") + " " + a.season_year : (a.format || "Anime"),
+      author: original(a.title, title) || (a.season_year ? (a.format || "Anime") + " " + a.season_year : (a.format || "Anime")),
       duration: a.episode_duration_minutes > 0 ? a.episode_duration_minutes * 60 : -1,
       views: -1,
       kind: a.format == "MOVIE" ? "movie" : null,
