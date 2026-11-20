@@ -12,7 +12,7 @@ Orvid also lists these under Filters → Repositories once this repository is ad
 
 | Repository | Link |
 |---|---|
-| Orvid secret (18+) | `https://raw.githubusercontent.com/mankidev/orvid-sources-secret/main/` |
+| Orvid adult (18+) | `https://raw.githubusercontent.com/mankidev/orvid-sources-adult/main/` |
 
 ## Source format
 

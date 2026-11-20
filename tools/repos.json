@@ -1,7 +1,7 @@
 [
  {
-  "name": "Orvid secret",
-  "url": "https://raw.githubusercontent.com/mankidev/orvid-sources-secret/main/",
+  "name": "Orvid adult",
+  "url": "https://raw.githubusercontent.com/mankidev/orvid-sources-adult/main/",
   "adult": true
  }
 ]
