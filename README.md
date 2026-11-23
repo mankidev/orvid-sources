@@ -20,7 +20,7 @@ Each source is one JSON file with an `id`, a `name` and one of three bodies:
 
 - `engine`: turns on a source built into Orvid, such as `youtube`.
 - `html`: describes a site's search page with a card marker and regular expressions for link, title, thumbnail, duration and views. Orvid finds the stream in the video page (`<source>` tags, KVS players, an optional `iframe`).
-- `script`: a JavaScript file with `search(query, next)` and `resolve(url)`. Scripts run in a sandbox and reach the network only through `http.get`, `http.post` and `http.json`, which go over Tor. `util.duration`, `util.number` and `util.unescape` parse common page text.
+- `script`: a JavaScript file with `search(query, next)` and `resolve(url)`. Scripts run in a sandbox and reach the network only through `http.get`, `http.post` and `http.json`, which go over Tor. `http.web` opens a page in a hidden browser and returns its HTML, for sites that block plain requests (Orvid 0.4.26 and later). `util.duration`, `util.number` and `util.unescape` parse common page text.
 
 `match` is the regular expression for the source's video links, `adult` marks 18+ sources, `weight` (0.1 to 1) sets how high results rank and `lang` limits a source to queries in one script (`cyrillic`, `arabic`, `hangul`).
 

@@ -1,13 +1,15 @@
 var SITE = "https://www.instagram.com";
 var PAGES = 3;
 var BOT = { "User-Agent": "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)" };
-var FIXERS = ["https://www.kkinstagram.com/reel/", "https://www.uuinstagram.com/videos/", "https://www.eeinstagram.com/videos/"];
-var INFO = ["https://www.eeinstagram.com/reel/", "https://www.uuinstagram.com/reel/"];
+var INFO = "https://www.eeinstagram.com/reel/";
 var ENGINES = [
   "https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/html/?q=",
   "https://html.duckduckgo.com/html/?q=",
   "https://lite.duckduckgo.com/lite/?q="
 ].filter(function (u) { return env.tor || u.indexOf(".onion/") < 0; });
+
+var WEB = typeof http.web == "function";
+var PREFIXES = WEB ? ["site:instagram.com/reel "] : ["site:instagram.com/reel ", "site:instagram.com/reels "];
 
 var failing = {};
 
@@ -18,7 +20,7 @@ function links(phrase, page) {
     if (failing[e]) continue;
     var html;
     try {
-      html = http.get(ENGINES[e] + q);
+      html = WEB ? http.web(ENGINES[e] + q) : http.get(ENGINES[e] + q);
     } catch (err) {
       failing[e] = true;
       last = err;
@@ -65,7 +67,7 @@ function item(code, title, snippet) {
   if (s && MONTHS[s[2]]) date = s[4] + "-" + ("0" + MONTHS[s[2]]).slice(-2) + "-" + ("0" + s[3]).slice(-2);
   if (s && s[5]) caption = s[5].replace(/"\.?$/, "");
   return {
-    url: SITE + "/reel/" + code + "/",
+    url: SITE + "/reel/" + code + "/?l=1",
     title: caption.replace(/\s*\.\.\.\s*$/, "") || "Instagram reel",
     author: s ? "@" + s[1] : parts.length > 1 ? parts[0] : "",
     duration: -1,
@@ -82,7 +84,7 @@ function meta(html, name) {
 function search(query, next) {
   var page = next ? parseInt(next, 10) : 0;
   var items = [], seen = {}, failed = 0, last;
-  ["site:instagram.com/reel ", "site:instagram.com/reels "].forEach(function (prefix) {
+  PREFIXES.forEach(function (prefix) {
     var found;
     try {
       found = links(prefix + query, page);
@@ -99,7 +101,7 @@ function search(query, next) {
       }
     });
   });
-  if (failed == 2) throw last;
+  if (failed == PREFIXES.length) throw last;
   return { items: items, next: items.length && page + 1 < PAGES ? String(page + 1) : null };
 }
 
@@ -109,37 +111,8 @@ function code(url) {
   return m[1];
 }
 
-function resolve(url) {
-  var c = code(url);
-  var last;
-  for (var i = 0; i < FIXERS.length; i++) {
-    try {
-      var to = http.check(FIXERS[i] + c + (i == 0 ? "/" : "/1"), BOT).location;
-      if (to && /\.(?:jpe?g|webp|heic)(?:\?|$)/.test(to)) throw new Error("video unavailable without login");
-      if (to && /\.mp4(?:\?|$)/.test(to)) {
-        var info = "";
-        try {
-          info = http.get(INFO[0] + c + "/", BOT);
-        } catch (e) {
-        }
-        return {
-          url: to,
-          hls: false,
-          title: meta(info, "og:description").split("\n")[0],
-          author: meta(info, "twitter:title")
-        };
-      }
-      last = new Error("video unavailable");
-    } catch (e) {
-      if (/without login/.test(String(e))) throw e;
-      last = e;
-    }
-  }
-  throw last;
-}
-
 function tags(url) {
-  var html = http.get(INFO[0] + code(url) + "/", BOT);
+  var html = http.get(INFO + code(url) + "/", BOT);
   var out = [], re = /#([^\s#&]+)/g, m;
   var text = meta(html, "og:description");
   while ((m = re.exec(text)) && out.length < 6) out.push(m[1]);
