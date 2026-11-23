@@ -3,9 +3,10 @@
  "name": "Instagram",
  "rank": 2,
  "engine": "instagram",
- "version": 3,
+ "version": 4,
  "weight": 0.6,
  "web": true,
+ "webClick": "a[href$=\"?l=1\"]",
  "match": "instagram\\.com/(?:[^/?#]+/)?(?:reels?|p|tv)/([A-Za-z0-9_-]{6,})",
  "icon": "instagram.png",
  "script": "instagram.js"

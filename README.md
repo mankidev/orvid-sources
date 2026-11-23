@@ -28,6 +28,8 @@ For sites that answer slowly over Tor, `html.timeout` (5 to 60 seconds, default 
 
 A source with `"portal": true` needs no `match` and keeps every link it finds. Links from sites Orvid knows play through that source, other pages through Orvid's generic player. `"torless": true` turns a source off while Tor is on. The DuckDuckGo and Yandex sources use both, because search engines block Tor. While Tor is off, they see your IP address and your search. `"torPlayback": false` keeps a source searchable over Tor but shows a note that its videos do not play there.
 
+With `"web": true` a source's videos play in Orvid's browser player. `webClick` is a CSS selector that the player clicks once it appears and until a video shows up, for pages that put a gate in front of the video (Orvid 0.4.26 and later).
+
 `search` returns `{items: [{url, title, author, duration, views, thumb, date}], next}`. It can return `skip: true` with no items when the query does not suit the source, such as a Telegram search that is not a channel name. `resolve` returns `{url, hls, referer, title, author, subtitles}`, where `subtitles` is a list of `{url, lang, label}` WebVTT or SRT files.
 
 ## Build
